@@ -1,0 +1,159 @@
+/* Four card feature section */
+
+/* Structures */
+body {
+    background-color: #F4F4F2;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5rem;
+}
+
+.heading {
+    font-size: 1.5rem;
+    color: #BBBFCA;
+    margin-top: 3rem;
+}
+
+.bold-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* First Grid styling */
+
+.grid-one, .grid-two {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(9,100px);
+    grid-template-rows: repeat(4, 100px);
+
+}
+
+.box1, .box2, .box3, .box4 {
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #BBBFCA;
+    position: relative;
+
+}
+
+.box1 {    
+    grid-area: 2/1/4/4;
+    border-top-style: solid;
+    border-top-color: #79B4B7;
+
+}
+
+.box2 {    
+    grid-area: 1/4/3/7;
+    border-top-style: solid;
+    border-top-color: #F25287;
+}
+
+.box3 {    
+    grid-area: 3/4/5/7;
+    border-top-style: solid;
+    border-top-color: #FFD93D;
+}
+
+.box4 {    
+    grid-area: 2/7/4/10;
+    border-top-style: solid;
+    border-top-color: #A4EBF3;
+}
+
+.text-section {
+    margin-left: 20px
+}
+
+.icon {
+    width: 10%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Second Grid Styling */
+
+.grid-two{
+    margin: 300px auto;
+}
+
+.container-two {
+    display: grid;
+    grid-template-columns: repeat(8,100px);
+    grid-template-rows: repeat(6,100px);
+    gap: 30px;
+}
+
+.box5, .box6, .box7, .box8, .box9 {
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #BBBFCA;
+    font-size: 0.85rem;
+    position: relative;
+    padding: 20px;
+
+}
+
+.box5 {
+    grid-area: 1/1/4/5;
+    background-color: #5D3891;
+    color: white;
+}
+
+.box6 {
+    grid-area: 1/5/4/7;
+    background-color: #3C486B;
+    color: white;
+}
+
+.box7 {
+    grid-area: 1/7/7/9;
+    background-color: white;
+    color: #3C486B;
+}
+
+.box8 {
+    grid-area: 4/1/7/3;
+    background-color: white;
+    color: #3C486B;
+}
+
+.box9 {
+    grid-area: 4/3/7/7;
+    background-color: #1A1C20;
+    color: white;
+}
+
+.profile {
+    width: 175px;
+    position: relative;
+}
+
+.passport {
+    width: 20%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    border: solid 2px #BBBFCA;
+}
+
+.profile-name, .badge {
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.badge {
+    font-weight: lighter;
+    color: #BBBFCA;
+}
